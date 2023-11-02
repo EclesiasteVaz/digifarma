@@ -1,0 +1,2 @@
+parou no arquivo main-venda , para gravar os dados dos inputs que se apagam
+quando selecionas um medicamento
