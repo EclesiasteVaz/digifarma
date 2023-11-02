@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finanças</title>
+    <title>Funcionários</title>
     <link rel="stylesheet" href="../../style/body.css">
     <link rel="stylesheet" href="../../style/fonts.css">
     <link rel="stylesheet" href="../../style/div-up.css">
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="../../style/div-center-right.css">
     <link rel="stylesheet" href="../../style/messagebox.css">
     <link rel="stylesheet" href="../../style/funcionarios.css">
-    <link rel="stylesheet" href="../../style/financas.css">
 </head>
 <body>
 <div class="up">
@@ -44,10 +43,10 @@
                     <a  href="vender.php"><img src="../../images/icons/cart-flatbed-suitcase.svg" alt="."><span>Vender</span></a>
                 </li>
                 <li>
-                    <a  href="funcionarios.php"><img src="../../images/icons/users-line.svg" alt="."><span>Funcionarios</span></a>
+                    <a class="in" href="funcionarios.php"><img src="../../images/icons/users-line.svg" alt="."><span>Funcionarios</span></a>
                 </li>
                 <li>
-                    <a class="in" href="financas.php"><img src="../../images/icons/money-check-dollar.svg" alt="."><span>Finanças</span></a>
+                    <a href="financas.php"><img src="../../images/icons/money-check-dollar.svg" alt="."><span>Finanças</span></a>
                 </li>
                 <li>
                     <a href="configuracoes.php"><img src="../../images/icons/gear.svg" alt="."><span>Configurações</span></a>
@@ -55,44 +54,55 @@
             </ul>
         </nav>
         <div class="center-right">
-            <h2>A sua Finança & as dispesas</h2>
+            <h2>Lista dos seus funcionários & adicionar novos</h2>
             <section class="flex-lista-add">
-                <div class="left">
-                    <div class="informacao">
-                        <h3>O orçamento é:</h3>
-                        <span class="orcamento">3.000.000kz</span>
-                    </div>
-                    <h3>A sua lista de dispesas</h3>
-                    <main class="list">
-
+                <div class="lista-funcionario">
+                    <h3>A sua lista de funcionários</h3>
+                    <main id="list">
+                        
                     </main>
+
                 </div>
-                <div class="right">
-                	<form action="" method="post">
-                        <h3>Efectuar uma retirada de dinheiro</h3>
-                        <div>
-                            <label for="motivo">Insere o motivo da saída dos valores</label>
-                            <input type="text" name="" id="motivo">
-                        </div>
-                        <div>
-                            <label for="valor">Insere o valor a ser retirado</label>
-                            <input type="number" name="" id="valor" placeholder="exemplo: 30000, sem virgula ou ponto">
-                        </div>
-                        <div>
-                            <label for="senha">Insere a sua palavra passe</label>
-                            <input type="password" name="" id="senha">
-                        </div>
-                        <div class="btns">
-                            <button type="reset">Cancelar</button>
-                            <button type="button" class="submit" onclick="efectuarSaida()">Retirar</button>
-                        </div>
-                    </form>
+                <div class="add-new-funcionario">
+                    <h3>Adicionar um novo funcionário</h3>
+                    <main class="novo-funcionario">
+                        <form id="formNovoFuncionario" enctype="multipart/form-data" action="../../api/funcionario.php" method="post">
+                            <label for="nome_funcionario">O nome do funcionário</label>
+                            <input type="text" name="nome_funcionario" id="nome">
+                            <label for="senha">A senha para conta do mesmo</label>
+                            <input type="password" name="senha" id="senha">
+                            <label for="senha">O salário do funcionário</label>
+                            <input type="number" name="salario" id="salario">
+                            <div>
+                                <button type="submit" class="submit" name="btn_enviar">Guardar</button>
+                                <button type="reset">Cancelar</button>
+                            </div>
+                        </form>
+                    </main>
                 </div>
             </section>
         </div>
     </div>
     <script src="../../js/components/messagebox.js" ></script>
-    <script src="../../js/mediador-api/main-financas.js" defer> </script>
-
+    <script src="../../js/mediador-api/main-funcionario.js" defer ></script>
+    <script src="../../js/components/card-funcionario.js" defer ></script>
+    <?php
+        if(isset($_GET["sms"]))
+        {
+            if($_GET["sms"]=="yes")
+            {
+                echo '<script >MessageBox.Show("O novo funcionário foi adicionado com sucesso.")</script>';
+            }
+            else if($_GET["sms"]=="not") 
+            {
+                echo '<script >MessageBox.Show("Não possível fazer a requisição.");</script>';
+            }
+            else if($_GET["sms"]=="notnot")
+            {
+                echo '<script >MessageBox.Show("Por favor preencha todos os campos")</script>';
+            }
+            $_GET["sms"] = "";
+        }
+    ?>
 </body>
 </html>
