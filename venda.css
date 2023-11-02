@@ -1,0 +1,309 @@
+.up-venda
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.up-venda main
+{
+    width: 650px;
+    height: 450px;
+    border-radius: 8px;
+    background-color: rgb(36, 39, 37);
+    box-shadow: 5px 5px 80px rgba(212, 252, 227, 0.507);
+}
+
+.up-venda main form
+{
+    width: 96%;
+    margin:auto;
+}
+
+.up-venda main h2
+{
+    width: 90%;
+    margin: auto;
+}
+
+.up-venda main form input
+{
+    width: 90%;
+    height: 35px;
+    font-family: texto-normal;
+    border: none;
+    border-bottom: 1px solid rgb(31, 243, 126);
+    display: block;
+    margin:10px auto;
+    background-color: rgb(36, 39, 37);
+    color: white;
+}
+
+.up-venda main form input:focus
+{
+    border: 1px solid rgb(31, 243, 126);
+    box-shadow: 2px 2px 8px rgb(114, 243, 178);
+}
+
+.up-venda main form button, h2 button
+{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(31, 243, 126);
+    margin-left: 30px;
+}
+
+h2 button
+{
+    padding: 5px 15px 5px 10px;
+    margin-left: 4px;
+    cursor:pointer;
+}
+
+h2 button.cancel
+{
+    background-color: rgb(180, 59, 59);
+    color: white;
+}
+
+.list-items
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: red;
+    overflow: hidden;
+    overflow-x: auto;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(44, 46, 45);
+    height: 80px;
+}
+.card-item-selecionado{
+    width: fit-content;
+    height: 28px;
+    border-radius: 3px;
+    background-color: rgb(5, 141, 66);
+    color: white;
+    margin: 0px 4px;
+    padding: 0px 14px;
+    font-size: 11pt;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-item-selecionado span{
+    display: block;
+    margin: 0px 4px;
+}
+
+.relatorio
+{
+    width: 60%;
+    background-color: rgb(44, 46, 45);
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: left;
+    margin-left: 6.8%;
+    margin-top: 2%;
+}
+
+.card-relatorio
+{
+    display: flex;
+    width: fit-content;
+    padding: 6px 12px;
+    color: rgb(24, 26, 24);
+    background-color: rgb(29, 146, 88);
+    border-radius: 3px;
+    margin-top: 4px;
+}
+
+.card-relatorio span{
+    color: rgb(217, 253, 235);
+    margin-right: 3px;
+}
+
+.btns-venda
+{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(44, 46, 45);
+    margin-left: 6.8%;
+    margin-top: 10px;
+    padding: 6px 10px;
+}
+
+.btns-venda button{
+    width: fit-content;
+    padding: 5px 15px 5px 10px;
+    border-radius: 3px;
+    background-color: rgb(31, 243, 126);
+    color: white;
+    border: none;
+}
+
+.btns-venda button.cancel
+{
+    background-color: rgb(180, 59, 59);
+}
+
+#list-venda
+{
+    width:150vh;
+    height:450px;
+    background-color: rgb(44, 46, 45);
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#list-venda header{
+    display: flex;
+    background-color: rgb(29, 146, 88);
+    color: white;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#list-venda header div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+}
+
+#list-venda header div h3
+{
+    font-size: Super-titulo;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-left:4px;
+}
+
+#list-venda header button{
+    position: absolute;
+    top: 6px;
+    right:16px;
+    background-color: rgb(44, 46, 45);
+    border: none;
+    border-radius: 8px;
+    width: 180px;
+    height: 40px;
+    color: rgb(29, 146, 88);
+    cursor: pointer;
+    transition: .6s;
+}
+
+#list-venda header button:hover{
+    background-color: white;
+}
+
+#main-cards-venda
+{
+    width: 98%;
+    height: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-venda{
+
+    border-radius: 8px;
+    margin-top: 4px;
+    background-color: rgb(21, 22, 21);
+    margin-left: 4px;
+    height:180px;
+    width: 300px;
+}
+
+.card-venda h5
+{
+    width: fit-content;
+    margin: auto;
+    color:white;
+    letter-spacing: 1px;
+    font-weight: 50;
+    font-size: 14pt;
+    font-family: super-titulo;
+    text-align: center;
+}
+
+.card-venda span{
+    font-size: 10pt;
+    display: block;
+    color: rgb(201, 230, 215);
+    margin-left: 4px;
+    font-weight: bolder;
+}
+
+.card-venda span span{
+    display: inline-block;
+    font-weight: 100;
+}
+
+.ver-mais-venda
+{
+    display: block;
+    width: 90%;
+    height: 36px;
+    background-color: rgb(114, 243, 178);
+    color: rgb(24, 26, 24);
+    border: none;
+    margin: auto;
+    padding: 4px 10px 4px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: texto-magro;
+    font-size: 10pt;
+    cursor:pointer;
+}
+
+.relatorio-venda{
+    width: 300px;
+    height: 400px;
+    background-color: rgba(37, 38, 38, 0.793);
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(94, 95, 95, 0.431);
+}
+
+.relatorio-venda div{
+    margin-top: 20px;
+}
+.relatorio-venda span
+{
+    font-size: 12pt;
+}
+
+main.list-medicamentos{
+    width: 98%;
+    height: 56%;
+    background-color: rgba(38, 40, 39, 0.119);
+    border-radius: 4px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.item-list{
+    width: 85%;
+    height: 35px;
+    margin: auto;
+    background-color: rgb(29, 146, 88);
+    color: whitesmoke;
+    border-radius: 4px;
+    padding: 4px;
+}

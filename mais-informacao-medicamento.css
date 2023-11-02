@@ -1,0 +1,74 @@
+.mais-infor{
+    background-color: #25272686;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-mais-infor
+{
+    width: 300px;
+    height: 500px;
+    border-radius: 8px;
+    background-color:  #1a1b1a;
+    display: block;    
+    box-shadow: 2px 2px 3px rgba(161, 243, 193, 0.055);
+}
+
+.card-mais-infor img
+{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: 200px;
+    border-radius: 8px;
+}
+.card-mais-infor div
+{
+    width: 90%;
+    margin: auto;
+    font-family: texto-magro;
+    color: #e8f3ee;
+}
+.card-mais-infor div span
+{
+    display: block;
+}
+.card-mais-infor div span.destaque
+{
+    display: inline-block;
+    color:#28a76d;
+    margin-left: 10px;
+}
+
+.card-mais-infor div.btns{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.card-mais-infor div button{
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(22, 226, 114);
+    border: none;
+}
+.card-mais-infor div.btns button{
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #ecea55;
+    border-radius: 8px;
+    border:none
+}
+
+.card-mais-infor div.btns button.Eliminar
+{
+    background-color: rgb(211, 38, 38);
+}

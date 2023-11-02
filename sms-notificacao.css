@@ -1,0 +1,72 @@
+.sms-notificacao
+{
+    width: 260px;
+    height: 400px;
+    border-radius: 8px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #191919;
+}
+
+.header-sms-notificacao
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555755;
+    border-radius: 8px 8px 0px 0px;
+    padding: 6px 15px;
+}
+
+.header-sms-notificacao img
+{
+    width: 25px;
+    height: 25px;
+}
+
+.header-sms-notificacao span
+{
+    display: block;
+    margin-left: 10px;
+    color: #f9fff9;
+}
+
+.body-sms-notificacao
+{
+    position: relative;
+    height: 90%;  
+    padding:6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f9fff9;
+    overflow:hidden;
+    overflow-y: auto;
+
+}
+
+.comeco
+{
+    margin-bottom:100px;
+}
+
+.card-sms
+{
+    width:98%;
+    height: 60px;
+    border-radius: 4px;
+    margin: auto;
+    background-color: #373837;
+    color: #ececec; 
+    padding:6px;
+    margin:4px;
+}
+
+.card-sms span
+{
+    font-family: texto-magro;
+    display:block;
+    color: #10d555;
+}

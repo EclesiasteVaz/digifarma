@@ -1,0 +1,23 @@
+.icon-site
+{
+    width:200px;
+    height: 60px;
+    background-image: url('../images/icons/icon.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.icon-progress
+{
+    width: 70px;
+    height: 70px;
+    background-image: url('../images/icons/spinner.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.icon-input
+{
+    width:20px;
+    height: 20px;
+}

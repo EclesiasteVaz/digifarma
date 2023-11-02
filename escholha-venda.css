@@ -1,0 +1,22 @@
+.escolha button
+{
+    padding: 6px 30px;
+    background-color: rgb(45, 182, 102);
+    border-radius: 3px;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.escolha button:hover
+{
+    background-color: rgb(202, 250, 222);
+    border: 1px solid rgb(45, 182, 102);
+    color: rgb(45, 182, 102);
+}
+
+h2
+{
+    font-family: texto-magro;
+    color: rgb(202, 250, 222);
+}

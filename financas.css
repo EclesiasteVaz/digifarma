@@ -1,0 +1,104 @@
+
+
+.left .informacao{
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: #34383623;
+    padding: 20px;
+    box-shadow: 3px 3px 5px #097d3732;
+    border: 0.2px solid #097d3780;
+}
+
+.left .informacao h3{
+    font-size: 16pt;
+    text-align: center;
+    font-family: titulo;
+    font-weight: 100;
+}
+
+.left .informacao span
+{
+    display:block;
+    text-align: center;
+    font-size: 24pt;
+    color:#038537;
+}
+
+.list
+{
+    border: 0.1px solid #03853722;
+    width:300px;
+    height:300px;
+    margin-top:4px;
+    border-radius: 5px;
+    padding-top:10px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.card-dispesas 
+{
+    width: 90%;
+    min-height: 60px;
+    background-color: #373b38;
+    border-radius:4px;
+    margin: 4px auto;
+
+}
+
+ 
+.card-dispesas h4
+{
+    color:#bac5bf;
+    width: fit-content;
+    margin: 8px 10px 3px 10px;
+    font-family: texto-magro;
+}
+
+.card-dispesas span{
+    color:#1ad26d;
+    font-size:12px;
+    margin-left: 10px;
+}
+
+form
+{
+    width: 400px;
+    height:300px;
+    background-color:#252625;
+    border-radius: 8px;
+    font-size:15px;
+    box-shadow: 2px 2px 2px #51635931;
+    padding:20px;
+    color:#bac5bf;
+}
+
+form input{
+    width: 90%;
+    border:none;
+    color:#1ad26d;
+    border-radius: 4px;
+    background-color: #373b38;
+    height:35px;
+}
+
+.btns
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btns button
+{
+    margin: 20px 10px 4px 0px;
+    padding: 7px;
+    border: none;
+    border-radius:4px;
+    background-color: #ef3434;
+}
+
+.btns button.submit
+{
+    background-color: #1ad26d;
+}

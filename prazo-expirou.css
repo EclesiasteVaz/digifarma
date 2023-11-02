@@ -1,0 +1,66 @@
+h2{
+    text-align: justify;
+    font-weight: 100;
+    letter-spacing: 0.3px;
+    color: red;
+    width:90%;
+    margin:auto;
+    margin-bottom: 30px;
+}
+
+.up
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apelo
+{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: rgb(55, 59, 57);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.apelo p
+{
+    width: 90%;
+    margin: auto;
+    color: rgb(212, 212, 212);
+    text-align: justify;
+
+}
+
+.contacto{
+
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(16, 178, 97);
+    color: rgb(55, 59, 57);
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+button{
+    width: 120px;
+    padding: 8px 30px;
+    border-radius: 30px;
+    background-color: rgb(234, 250, 236);
+    color: rgb(16, 178, 97);
+    font-family: texto-magro;
+    border:none;
+    margin-top: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+button:hover
+{
+    background-color: rgb(16, 178, 97);
+    color:rgb(234, 250, 236);
+}

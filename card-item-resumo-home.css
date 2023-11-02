@@ -1,0 +1,73 @@
+.items-body
+{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items-body h2
+{
+    width: 600px;
+    padding: 20px 30px;
+    margin: 0px;
+    text-align: left;
+    color:white;
+    font-weight: 100;
+}
+
+div.card-item-resumo-home
+{
+    width: 270px;
+    height: 120px;
+    border-radius: 8px;
+    background-color:#373837;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+div.card-item-resumo-home img
+{
+    width: 90px;
+    height: 70px;
+    border-radius:5px;
+}
+
+div.card-item-resumo-home div.inf-item-resumo-home
+{
+    display: flex;
+    flex-direction: column;
+    color:  #f0faf5;
+}
+
+div.card-item-resumo-home div.inf-item-resumo-home h4
+{
+    font-family: texto-magro;
+    font-size: 11pt;
+    margin: 0px;
+}
+
+div.card-item-resumo-home div.inf-item-resumo-home div.inf-flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.card-item-resumo-home div.inf-item-resumo-home div.inf-flex div
+{
+    margin: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+}
+
+div.card-item-resumo-home div.inf-item-resumo-home div span
+{
+    color: #3eec95;
+    font-size: 14pt;
+    font-family: titulo;
+}

@@ -1,0 +1,25 @@
+div.up
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes circle-progress-bar
+{
+    from
+    {
+        rotate: 0grad;
+    }
+    to{
+        rotate: 360grad;
+    }
+}
+.icon-progress
+{
+    animation-name: circle-progress-bar;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}

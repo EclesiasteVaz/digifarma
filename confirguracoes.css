@@ -1,0 +1,52 @@
+.config-card h2
+{
+    font-family: texto-normal;
+    font-weight: 100;
+    color: rgb(238, 245, 240);
+    letter-spacing: 0.4px;
+    margin: 2px 0px;
+}
+
+.center-right
+{
+    padding: 10px 30px;
+    
+}
+
+.config-card
+{
+    width:500px;
+    min-height: fit-content;
+    padding: 20px;
+    background-color: rgb(46, 47, 47);
+    border-radius:8px;
+    color:rgb(198, 198, 198) ;
+    margin-bottom:10px;
+}
+
+.config-card div
+{
+    margin-bottom: 6px;
+}
+
+.config-card input
+{
+    display:block;
+    width: 95%;
+    height:30px;
+    background-color: rgb(70, 71, 71);
+    border:none;
+    border-radius: 5px;
+    color: rgb(238, 245, 240);
+}
+
+.end-session{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgb(235, 38, 38);
+    border-radius: 4px;
+    text-decoration: none;
+    color:rgb(237, 237, 237);
+}

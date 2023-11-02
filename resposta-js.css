@@ -1,0 +1,14 @@
+#ok
+{
+    color: #4ae07c;
+}
+#not-ok
+{
+    color:#db2323;
+}
+#not-ok, #ok
+{
+    display: block;
+    font-size: 12pt;
+    margin-top: 10px;
+}

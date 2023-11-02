@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Super-titulo;
+    src: url("../fonts/Poppins-ExtraBold.ttf");
+}
+@font-face {
+    font-family: titulo;
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: texto-normal;
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: texto-magro;
+    src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+*{
+    box-sizing: border-box;
+    font-family: texto-normal;
+}

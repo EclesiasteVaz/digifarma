@@ -1,0 +1,54 @@
+#up-sms
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.sms
+{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #333635;
+    box-shadow: 2px 2px 3px #fafffd1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12pt;
+    font-family: texto-magro;
+    color: rgb(242, 250, 246);
+}
+div.sms button{
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #16fa9fdc;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+div.sms span
+{
+    display: block;
+    width: 94%;
+    margin: auto;
+    padding: 4px;
+}
+div.sms div
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+div.sms div button
+{
+    margin:auto  4px;
+}
+div.sms button.red-button{
+    background-color: rgb(255, 83, 83);
+}

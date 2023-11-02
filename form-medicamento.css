@@ -1,0 +1,48 @@
+form
+{
+    width: 100%;
+}
+
+form input
+{
+    height: 40px;
+    border-radius:4px;
+    background-color: transparent;
+    border: 0.2px solid rgba(225, 255, 250, 0.281);
+    display: block;
+    width: 100%;
+    margin: 4px auto;
+    outline: none;
+    color: white;
+}
+form input:focus
+{
+    background-color: rgba(225, 255, 250, 0.281);
+}
+
+form input.input-file
+{
+    width:0px;
+    height: 0px;
+}
+
+form#form-adicionar img
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+form#form-adicionar button
+{
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(78, 252, 185);
+    margin: 4px;
+}
+
+form#form-adicionar button.red-button
+{
+    background-color: rgb(255, 59, 59);
+}
